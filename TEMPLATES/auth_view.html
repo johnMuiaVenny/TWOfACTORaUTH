@@ -1,0 +1,17 @@
+
+{% load crispy_forms_tags %}
+
+<br><br>
+
+<center>
+
+    <form action="" method="POST" outocomplete="off">
+        {% csrf_token %}
+    
+        {{form|crispy}}
+    
+        <input type="submit"/> 
+    
+    </form>
+
+</center>
